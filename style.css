@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Lexend Deca", sans-serif; 
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+    background-color: hsla(0, 0%, 100%, 0.75);  
+}
+.container{
+    margin: auto;
+    display: flex;
+    max-width: 95%;
+    width: auto;
+}
+.card{
+    padding: 20px 35px 60px;
+    
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0 70px;
+    width: 200px;
+}
+.card img{
+    width: 60px;
+    margin-left: 10px;
+}
+.title{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.card div p:last-child{
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 30px;
+}
+.card a{
+    background-color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s ease-in; 
+    font-weight: 400;
+}
+.card a:hover{
+    border: solid 2px hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+    border-left: solid 1px hsl(179, 100%, 13%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+.card1 a{
+    color: hsl(31, 77%, 52%);
+}
+.card2 a{
+    color: hsl(184, 100%, 22%);
+}
+.card3 a{
+    color: hsl(179, 100%, 13%);
+}
+@media (max-width: 868px){
+    .container{
+        flex-direction: column;
+        width: 500px;
+        margin: 50px auto;
+    }
+    .card div{
+       width: 100%;
+       margin-bottom: 10px;
+    }
+    .card div p:last-child{
+        line-height: 30px;
+    }
+    .card1{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 5px 5px 0 0px;
+    }
+    .card3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0px 5px 5px;
+    }
+}
